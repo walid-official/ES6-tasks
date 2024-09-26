@@ -43,3 +43,27 @@ console.log(allFriends(friends));
 // task-5
 //********
 
+const sqrNumbers = [2,3,4,7,5,8,10];
+let squareCollection = squares => {
+let sum = 0;
+   for(let square of squares){
+    sum += (square * square);
+   }
+   return sum / squares.length;
+}
+console.log(squareCollection(sqrNumbers));
+
+
+// task-6
+//*******
+
+
+const margeNumber1 = [2,3,4,5,6,7,8];
+const margeNumber2 = [9,10,11,12,13,14];
+
+const marge = (marNum1,marNum2) => {
+    let allNumbers =  [...marNum1,...marNum2];
+    return Math.max(...allNumbers)
+}
+
+console.log(marge(margeNumber1,margeNumber2))
